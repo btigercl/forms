@@ -9,14 +9,14 @@
     <table>
         <thead>
             <tr>
-                <td>Prices</td>
+                <th>Prices</th>
+            </tr>
+           <tr>
+                <th>Melon Name</th>
+                <th>Price per lb.</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Melon Name</td>
-                <td>Price per lb.</td>
-            </tr>
             <tr>
                 <td>Watermelon</td>
                 <td>$1.59</td>
@@ -58,9 +58,9 @@
         <label for="quantity">Quantity*:</label><input type="text" name="quantity" id="quantity">
         <br>
         Delivery Time
-            <input type="radio" name="time" value="am">12:00am-12:00pm
-            <input type="radio" name="time" value="pm">12:00pm-12:00am
-            <input type="radio" name="time" value="wat">Time is an illusion
+            <label><input type="radio" name="time" value="am">12:00am-12:00pm</label>
+            <label><input type="radio" name="time" value="pm">12:00pm-12:00am</label>
+            <label><input type="radio" name="time" value="wat">Time is an illusion</label>
         <br>
         Returning Customer?
             <input type="radio" name="returning" value="yes">Yes
@@ -72,6 +72,12 @@
             <input type="checkbox" name="stats" value="Hedgehog">Hedgehog
             <input type="checkbox" name="stats" value="Balloonicorn">Balloonicorn
             <input type="checkbox" name="stats" value="Yak">Yak
+        <br>
+        Color Picker:
+            <input type="color" name="color">
+        <br>
+        Email:
+            <input type="email" name="email">
         <br>
         <input type="submit">
     </form>
